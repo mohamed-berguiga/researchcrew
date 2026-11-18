@@ -1,0 +1,15 @@
+# Environnement virtuel
+venv/
+
+# Fichiers générés par Python
+__pycache__/
+*.pyc
+
+# Fichiers générés par le programme
+notes.md
+rapport.md
+
+# Fichiers de l'éditeur / du système
+.vscode/
+.DS_Store
+Thumbs.db
