@@ -102,3 +102,11 @@ researchcrew/
 ## 🛠️ Technologies
 
 Python · Ollama · Llama 3.2 · Prompt engineering · Systèmes multi-agents
+
+## 👤 Auteur
+
+**Mohamed Berguiga** — élève ingénieur à l'ENISO
+
+- 🌐 Portfolio : [mohamed-berguiga.github.io](https://mohamed-berguiga.github.io)
+- 💼 LinkedIn : [mohamed-berguiga](https://www.linkedin.com/in/mohamed-berguiga-0b7999343/)
+- 💻 GitHub : [@mohamed-berguiga](https://github.com/mohamed-berguiga)
