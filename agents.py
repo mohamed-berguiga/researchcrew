@@ -11,7 +11,6 @@ class Agent:
 
     def run(self, task):
         # L'agent reçoit une tâche et renvoie sa réponse
-        print(f"\n🤖 [{self.name}] travaille...")
         response = ollama.chat(
             model=MODEL,
             messages=[

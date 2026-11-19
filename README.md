@@ -62,6 +62,21 @@ ollama pull llama3.2
 
 ## ▶️ Utilisation
 
+### Interface web (Streamlit)
+
+```bash
+streamlit run app.py
+```
+
+L'interface s'ouvre sur `http://localhost:8501` :
+- saisie du sujet de recherche ;
+- **suivi en direct** de l'agent qui travaille ;
+- affichage du plan, des notes du Chercheur et des retours du Critique ;
+- rapport final mis en forme, **téléchargeable en Markdown** ;
+- choix du modèle Ollama et du nombre maximum de révisions.
+
+### Terminal
+
 ```bash
 python main.py
 ```
@@ -69,12 +84,12 @@ python main.py
 ```
 📝 Sujet de recherche : L'IA dans l'éducation
 
-🤖 [Planificateur] travaille...
+🤖 [Planificateur] Découpage du sujet en sous-questions...
 📋 Questions à traiter :
   - ...
-🤖 [Chercheur] travaille...
-🤖 [Rédacteur] travaille...
-🤖 [Critique] travaille...
+🤖 [Chercheur] ...
+🤖 [Rédacteur] Rédaction — version 1...
+🤖 [Critique] Relecture — version 1...
 ✅ Le Critique a approuvé le rapport !
 📄 Rapport final enregistré dans rapport.md
 ```
@@ -86,7 +101,9 @@ Un exemple de rapport généré est disponible dans [`exemples/exemple_rapport.m
 ```
 researchcrew/
 ├── agents.py          # Classe Agent (rôle + appel au LLM)
-├── main.py            # Orchestration des 4 agents
+├── crew.py            # Les 4 agents + orchestration (générateur d'événements)
+├── app.py             # Interface web Streamlit
+├── main.py            # Version terminal
 ├── requirements.txt
 └── exemples/
     └── exemple_rapport.md
@@ -96,12 +113,12 @@ researchcrew/
 
 - [ ] Recherche web réelle pour le Chercheur (sources citées)
 - [ ] Exécution des Chercheurs en parallèle (`asyncio`)
-- [ ] Interface web avec Streamlit
+- [x] Interface web avec Streamlit
 - [ ] Sorties structurées en JSON
 
 ## 🛠️ Technologies
 
-Python · Ollama · Llama 3.2 · Prompt engineering · Systèmes multi-agents
+Python · Ollama · Llama 3.2 · Streamlit · Prompt engineering · Systèmes multi-agents
 
 ## 👤 Auteur
 
